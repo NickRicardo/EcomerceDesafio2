@@ -1,0 +1,36 @@
+GET HTTP://localhost:8080/api/enderecos
+
+###
+
+GET HTTP://localhost:8080/api/enderecos/3
+
+###
+POST HTTP://localhost:8080/api/enderecos
+
+Content-Type: application/json
+{
+  "nome": "Nicolas",
+  "rua": "Rua dos Programadores",
+  "numero": "203",
+  "bairro": "osorio",
+  "complemento": "ap 1",
+  "cidade": "Valença",
+  "estado": "Rio de Janeiro",
+  "cep": "27500000"
+}
+
+
+###
+
+PUT HTTP://localhost:8080/api/enderecos/3
+Content-Type: application/json
+
+{
+  "nome": "Macarrao",
+  "descricao": "Macarrao peni",
+  "preco": 9.99
+}
+
+###
+
+DELETE  HTTP://localhost:8080/api/enderecos/4
